@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet" type="text/css" />
-    <title>Bar Page</title>
+    <title>Cocktail Page</title>
 </head>
 
 <body class="bg-black text-white">
@@ -53,6 +53,72 @@
             </a>
 
         </nav>
+    </div>
+
+    <div class="main_divs">
+
+        {% for cocktail in cocktails %}
+
+        <div class="cocktail_buttons_cocktail_page">
+            <a class="back-link-cocktail-page" href="/bar">
+                <i class="fa-solid fa-chevron-left fa-lg cocktail-button-arrow-cocktail-page"
+                    style="color: #ffffff;"></i>
+            </a>
+            <div class="cocktail-page-nav-name">
+                <i class="fa-solid fa-martini-glass-citrus fa-2xl cocktail-button-icon-cocktail-page"
+                    style="color: #da3f0b;"></i>
+                <span class="cocktail-button-text-cocktail-page">{{ cocktail.Name }}</span>
+            </div>
+        </div>
+        <div class="cocktail-page-facts">
+            <div class="cocktail-category">
+                <h1>Category</h1>
+                <div class="cocktail-spacer">
+                    <span>{{ cocktail.Category }}</span>
+                </div>
+            </div>
+            <div class="cocktail-ingredients">
+                <h1>Ingredients</h1>
+
+                {% for ingredient in ingredients %}
+
+                <div class="cocktail-spacer">
+                    <span>{{ ingredient }}</span>
+                </div>
+
+                {% endfor %}
+
+            </div>
+
+            {% if garnish != "NA" %}
+
+            <div class="cocktail-garnish">
+                <h1>Garnish</h1>
+
+                <div class="cocktail-spacer">
+                    <span>{{ garnish }}</span>
+                </div>
+
+            </div>
+
+            {% endif %}
+
+            <div class="cocktail-method">
+                <h1>Method</h1>
+
+                {% for method in method %}
+
+                <div class="cocktail-spacer">
+                    <span>{{ method }}</span>
+                </div>
+
+                {% endfor %}
+
+            </div>
+        </div>
+
+        {% endfor %}
+
     </div>
 
     <script>
