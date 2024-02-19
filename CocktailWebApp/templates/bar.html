@@ -56,8 +56,9 @@
     </div>
 
     <div class="bar-page-cocktail-container">
-        <h1>Cocktails</h1>
-        <p>Find out which cocktails you can mix with your ingredients!</p>
+        <div class="bar-title-div">
+            <h1 class="bar-title-div-h1">Cocktails</h1>
+        </div>
 
         <div class="bar-page-inner-container">
 
@@ -80,8 +81,6 @@
 
     <div class="bar-page-ingredients-container">
 
-        <h1>Your Bar</h1>
-
         {% for ingredient in ingredients %}
 
         <div class="bar-ingredients">
@@ -97,6 +96,12 @@
 
         {% endfor %}
 
+        <div class="bar-spacer"></div>
+
+    </div>
+
+    <div class="your-bar-title-div">
+        <h1 class="your-bar-title-div-h1">Your Bar</h1>
     </div>
 
     <script>

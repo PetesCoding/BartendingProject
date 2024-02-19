@@ -102,7 +102,7 @@ def stripList(list):
     
     
     
-### Path Functions
+### Web Route Functions
 
 @app.route("/")
 def home():

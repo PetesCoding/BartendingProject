@@ -1,67 +1,101 @@
 /*** Home Page ***/
 
-/* Home Navbar */
-
-.icon-span-text {
-    color: white;
-}
-
-nav {
-    flex-direction: column;
-    width: 240px;
-    display: flex;
-    position: fixed;
-    left: 0;
-    padding: 10px;
-}
-
-.nav-div {
-    padding: 8px;
-}
-
-.nav-main {
-    border-style: solid;
-    border-color: rgba(30, 29, 29, 0.794);
+.home-main-div {
+    background-image: linear-gradient(rgba(32, 27, 58, 0.794), rgba(30, 29, 29, 0.794));
+    color: #fff;
     border-radius: 10px;
-    background-color: rgba(30, 29, 29, 0.794);
-    position: fixed;
-    left: 5px;
-    height: calc(100% - 13px)
+    position: absolute;
+    top: 8px;
+    left: 255px;
+    bottom: 5px;
+    width: calc(100% - 265px);
+    min-width: 380px;
+    overflow-x: scroll;
 }
 
-.links {
-    padding: 15px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: rgba(11, 11, 152, 0);
-    border-radius: 30px;
-    font-weight: bolder;
-    font-family: Arial, Helvetica, sans-serif;
+.home-title-div {
+    background-image: linear-gradient(rgba(43, 46, 140, 0.717), rgba(32, 27, 58, 0.794));
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+}
+
+.home-title-div-h1 {
+    margin: 15px;
+    position: absolute;
+    left: 25px;
+    bottom: 5px;
+    font-size: 75px;
+    font-weight: 900;
+}
+
+.home-selectors {
+    position: relative;
+    left: 0px;
+    top: 30px;
+    height: 200px;
+    width: calc(100% - 10px);
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home-selectors-inner-div {
+    margin: 5px;
+    padding: 5px;
+}
+
+.home-selectors-inner-div a {
     text-decoration: none;
+}
+
+.home-selectors-div {
+    border-radius: 10px;
+    background-color: rgb(15, 14, 14);
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    height: 100px;
+    width: 200px;
     transition: 0.3s;
 }
 
-.links i {
-    padding-right: 20px;
+.home-selectors-div:hover {
+    background-color: rgb(40, 40, 40);
 }
 
-.links:hover {
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 50px;
-    background-color: rgba(19, 19, 195, 0.582);
-}
+/*** Index Page ***/
 
-/* Home Cocktail Buttons */
+/* Index Cocktail Buttons */
 
-.button_div {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.cocktail-main-div {
+    background-image: linear-gradient(rgb(62, 26, 17), rgba(31, 30, 30, 0.794));
+    color: #fff;
+    border-radius: 10px;
     position: absolute;
-    left: 250px;
-    top: 5px;
-    bottom: 1px;
+    top: 8px;
+    left: 255px;
+    bottom: 5px;
+    width: calc(100% - 265px);
+    min-width: 380px;
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cocktail-title-div {
+    background-image: linear-gradient(rgb(135, 49, 29), rgb(64, 39, 35));
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    margin-bottom: 40px;
 }
 
 .inner_button_div {
@@ -69,7 +103,7 @@ nav {
 }
 
 .cocktail_buttons {
-    background-color: rgba(30, 29, 29, 0.794);
+    background-color: rgb(22, 22, 21);
     border: none;
     height: 200px;
     width: 175px;
@@ -106,19 +140,18 @@ nav {
 
 /*** Cocktail Page ***/
 
-/* Cocktail Div */
-
 /* Cocktail Page Nav */
 
 .cocktail_buttons_cocktail_page {
     position: sticky;
     top: 8px;
     height: 100px;
+    width: calc(100% - 25px);
     min-width: 360px;
     border-radius: 10px;
-    border-color: rgba(65, 94, 115, 0.796);
+    border-color: rgba(43, 46, 140, 0.796);
     border-style: solid;
-    background-color: rgba(65, 94, 115, .796);
+    background-color: rgba(43, 46, 140, .796);
     margin: 10px;
     display: flex;
 }
@@ -183,6 +216,7 @@ nav {
     background-color: rgb(50, 50, 50);
     padding: 20px;
     margin: 20px;
+    width: calc(100% - 50px);
     min-width: 340px;
 }
 
@@ -242,14 +276,8 @@ nav {
 
 .ingredients-div {
     background-color: rgba(30, 29, 29, 0.794);
-    color: #fff;
     border-radius: 10px;
-    position: absolute;
-    top: 8px;
-    left: 255px;
-    width: calc(100% - 265px);
-    min-height: 770px;
-    min-width: 550px;
+    width: 100%;
 }
 
 .ingredients-holder {
@@ -338,18 +366,38 @@ nav {
 
 .bar-page-cocktail-container {
     width: calc(100% - 580px);
-    min-width: 220px;
+    min-width: 450px;
     margin-left: 8px;
     margin-right: 8px;
     border-style: solid;
     border-color: rgba(30, 29, 29, 0.794);
     border-radius: 10px;
-    background-color: rgba(30, 29, 29, 0.794);
+    background-image: linear-gradient(rgba(75, 62, 42, 0.794), rgba(30, 29, 29, 0.794));
     position: absolute;
     top: 8px;
     left: 247px;
+    bottom: 8px;
     height: calc(100% - 13px);
-    overflow: scroll;
+    overflow-x: scroll;
+}
+
+.bar-title-div {
+    background-image: linear-gradient(rgba(122, 80, 21, 0.717), rgba(75, 62, 42, 0.794));
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.bar-title-div-h1 {
+    margin: 15px;
+    position: absolute;
+    left: 25px;
+    bottom: 5px;
+    font-size: 75px;
+    font-weight: 900;
 }
 
 .bar-page-ingredients-container {
@@ -357,14 +405,43 @@ nav {
     border-style: solid;
     border-color: rgba(30, 29, 29, 0.794);
     border-radius: 10px;
-    background-color: rgba(30, 29, 29, 0.794);
+    background-image: linear-gradient(rgba(75, 62, 42, 0.794), rgba(30, 29, 29, 0.794));
     position: absolute;
     top: 8px;
     left: calc(100% - 315px);
+    bottom: 8px;
     height: calc(100% - 13px);
-    overflow: scroll;
+    overflow-x: scroll;
+}
+
+.bar-title-ingredient-div {
+    background-image: linear-gradient(rgba(122, 80, 21, 0.717), rgba(75, 62, 42, 0.794));
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+}
+
+.your-bar-title-div {
+    text-align: center;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     padding: 10px;
-    padding-bottom: 0px;;
+    width: 310px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 5px;
+    background-image: linear-gradient(rgb(122, 80, 21), rgb(75, 62, 42));
+}
+
+.your-bar-title-div-h1 {
+    font-weight: 900;
+}
+
+.bar-spacer {
+    height: 60px;
 }
 
 .bar-page-cocktail-container h1, p {
@@ -374,6 +451,8 @@ nav {
 .bar-page-ingredients-container h1 {
     margin: 10px;
     margin-bottom: 20px;
+    font-size: 50px;
+    margin-left: 20px;
 }
 
 .bar-page-inner-container {
@@ -389,7 +468,7 @@ nav {
 
 .bar-cocktail-div {
     border-radius: 10px;
-    background-color: rgb(42, 42, 42);
+    background-color: rgb(24, 24, 24);
     padding: 10px;
     height: 150px;
     width: 150px;
@@ -407,6 +486,7 @@ nav {
     position: absolute;
     bottom: 5px;
     left: 10px;
+    margin: 5px;
 }
 
 .bar-cocktail a {
@@ -443,7 +523,177 @@ nav {
     border-style: solid;
 }
 
+/*** Blog Page ***/
+
+.blog-main-div {
+    background-image: linear-gradient(rgba(32, 27, 58, 0.794), rgba(30, 29, 29, 0.794));
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 8px;
+    left: 255px;
+    bottom: 5px;
+    width: calc(100% - 265px);
+    min-width: 380px;
+    overflow-x: scroll;
+}
+
+.blog-inner-main-div {
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-div {
+    margin: 22.5px;
+}
+
+.blog-inner-div {
+    border-radius: 20px;
+    background-color: rgba(35, 35, 35, 0.565);
+    height: 200px;
+    width: 150px;
+    position: relative;
+}
+
+.blog-h1 {
+    margin: 15px;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+
+.blog-a {
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    text-decoration: none;
+    color: white;
+}
+
+.blog-img-div {
+    height: 50px;
+    width: 75px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    border-radius: 10px;
+    background-color: rgba(43, 43, 43, .5)
+}
+
+.blog-h3 {
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+
+}
+
+.blog-p {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    font-size: small;
+}
+
 /*** All Pages ***/
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/* Home Navbar */
+
+.icon-span-text {
+    color: white;
+}
+
+nav {
+    flex-direction: column;
+    width: 240px;
+    display: flex;
+    position: fixed;
+    left: 0;
+    padding: 10px;
+}
+
+.nav-div {
+    padding: 8px;
+}
+
+.nav-main {
+    border-style: solid;
+    border-color: rgba(30, 29, 29, 0.794);
+    border-radius: 10px;
+    background-color: rgba(30, 29, 29, 0.794);
+    position: fixed;
+    left: 5px;
+    height: calc(100% - 13px)
+}
+
+.links {
+    padding: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(11, 11, 152, 0);
+    border-radius: 30px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links i {
+    padding-right: 20px;
+}
+
+.links:hover {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50px;
+    background-color: rgba(19, 19, 195, 0.413);
+}
+
+/* Main Divs */
+
+.main_divs {
+    background-color: rgba(30, 29, 29, 0.794);
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    top: 8px;
+    left: 255px;
+    bottom: 5px;
+    width: calc(100% - 265px);
+    min-width: 380px;
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Title Divs */
+
+.title-div {
+    background-image: linear-gradient(rgba(43, 46, 140, 0.717), rgba(32, 27, 58, 0.794));
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+}
+
+.title-div-h1 {
+    margin: 15px;
+    position: absolute;
+    left: 25px;
+    bottom: 5px;
+    font-size: 75px;
+    font-weight: 900;
+}
+
+/* Alerts */
 
 .alert {
     border-radius: 20px;
@@ -472,31 +722,21 @@ nav {
     transition: 0.3s;
   }
 
-  .closebtn:hover {
+.closebtn:hover {
     color: black;
-  }
-
-.main_divs {
-    background-color: rgba(30, 29, 29, 0.794);
-    color: #fff;
-    border-radius: 10px;
-    position: absolute;
-    top: 8px;
-    left: 255px;
-    width: calc(100% - 265px);
-    min-height: 770px;
-    min-width: 380px;
 }
+
+/* Scroll Bar */
 
 *::-webkit-scrollbar-corner {
     background: transparent;
 }
 
 /* Works on Firefox */
-* {
+/* * {
     scrollbar-width: thin;
     scrollbar-color: dark;
-}
+} */
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
@@ -506,7 +746,7 @@ nav {
 *::-webkit-scrollbar-track {
     background: rgba(43, 43, 43, 0);
 }
-
+ 
 *::-webkit-scrollbar-thumb {
     background-color: grey;
     border-radius: 20px;
