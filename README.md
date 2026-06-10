@@ -172,5 +172,3 @@ Developer tips
 This project is provided under the MIT License. See the `LICENSE` file for details.
 
 ---
-
-If you'd like, I can add a short example of using the API (curl examples), a screenshot of the UI, or badges (CI/coverage). Tell me which and I'll add them.
